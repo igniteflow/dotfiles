@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-The obligatory dotfile repo, to save me when I destroy/lose my computer
+My dotfiles are stored here.  Linked up on new boxes using the wonderful GNU Stow
