@@ -1,9 +1,22 @@
-[color]
-	ui = true
-[user]
-	name = Phil Tysoe
-	email = philtysoe@example.com
-[alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
-	default = simple
+    default = simple
+
+[alias]
+    cp = cherry-pick
+    st = status -s
+    ci = commit
+	co = checkout
+    b = branch -a
+    review = log --patch --no-merges --reverse development..
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    slog = log --pretty=oneline --no-merges --reverse development.. --abbrev-commit
+
+[branch "master"]
+    mergeoptions = --no-commit --no-ff
+
+[color]
+    ui = auto
+
+[user]
+    name = Phil Tysoe
+
