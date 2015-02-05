@@ -5,11 +5,12 @@
     cp = cherry-pick
     st = status -s
     ci = commit
-	co = checkout
+    co = checkout
     b = branch -a
     review = log --patch --no-merges --reverse development..
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     slog = log --pretty=oneline --no-merges --reverse development.. --abbrev-commit
+    yesterday = log --pretty=format:'%Cred%h%Creset - %C(yellow)%ae%Creset - %Cgreen%cd%Creset - %s%Creset' --abbrev-commit --date=iso --author=Phil --after="yesterday" --before="today"
 
 [branch "master"]
     mergeoptions = --no-commit --no-ff
