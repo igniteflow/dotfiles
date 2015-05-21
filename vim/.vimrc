@@ -12,11 +12,13 @@ Bundle 'klen/python-mode'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Xuyuanp/nerdtree-git-plugin'
 Bundle 'majutsushi/tagbar'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'mileszs/ack.vim'
 " end load vundles
 
 " theme
+"let g:solarized_termcolors=256
 set background=dark
+"colorscheme solarized
 
 " turn filetype back on now that vundles are loaded
 filetype on
